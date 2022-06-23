@@ -1,32 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from "./components/Header/Header"
 import NavBar from "./components/Navbar/NavBar";
 import CartWidget from "./components/CartWidget/CartWidget"
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
-const root1 = ReactDOM.createRoot(document.getElementById('root1'));
-const root2 = ReactDOM.createRoot(document.getElementById('root2'));
-const root3 = ReactDOM.createRoot(document.getElementById('root3'));
+const App = () => {
+  return (
 
-//HEADER
-root1.render(
-  <React.StrictMode>
-     <Header/>
-  </React.StrictMode>
-);
+    <div>
 
-//NAVBAR
-root2.render(
-  <React.StrictMode>
-     <NavBar/>
-  </React.StrictMode>
-);
+<Header/>
+<NavBar/>
+<CartWidget/>
+<ItemListContainer greeting= "Bienvenidos a Kalaka"/>
 
-//CARTWIDGET
-root3.render(
-  <React.StrictMode>
-     <CartWidget/>
-  </React.StrictMode>
-);
+    </div>
+  )
+}
+
+export default App
