@@ -1,5 +1,6 @@
 import React from "react"
 import "./ItemListContainer.css"
+import fonts from "../../assets/fonts/fonts.css"
 
 const ItemListContainer = ({greeting}) => {
     return (
